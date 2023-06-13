@@ -16,10 +16,16 @@ final class MappingElement:ObservableObject{
     private let users:[String] = ["a", "b", "c", "d", "e"]
     
     func map(){
-        cancellable = users.publisher
-            .map { "\($0) 님, 환영합니다." }
-            .sink { print("\($0)") }
+        cancellable = ResponseResults.Friends.publisher
+            .map { user in
+                let ticket = Ticket(name: user.name, age: user.age, type: "자유이용권")
+                return ticket
+            }
+            .sink { ticket in
+                print("\(ticket.name)님, 환영합니다. \(ticket.type)이 발행되었습니다.")
+            }
     }
+    
     
     func tryMap(){
         cancellable = numbers.publisher

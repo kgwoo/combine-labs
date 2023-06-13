@@ -11,13 +11,13 @@ struct ContentView: View {
     @StateObject var MappingElements = MappingElement.shared
     
     var body: some View {
-        VStack {
+        VStack(spacing:20){
             Text("Hello, Combine!")
+            Button(action:{ MappingElements.map()}){
+                Text("티켓 발행")
+            }
         }
         .padding()
-        .onAppear{
-            MappingElements.map()
-        }
     }
 }
 

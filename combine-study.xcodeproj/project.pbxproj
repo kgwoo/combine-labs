@@ -16,6 +16,7 @@
 		479E57442A3883FF005E2789 /* MappingElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E57422A3883FF005E2789 /* MappingElements.swift */; };
 		479E57482A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E57462A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift */; };
 		479E57492A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E57472A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift */; };
+		479E574B2A38886F005E2789 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E574A2A38886F005E2789 /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		479E57422A3883FF005E2789 /* MappingElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappingElements.swift; sourceTree = "<group>"; };
 		479E57462A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingAndHandlingEventsWithCombineView.swift; sourceTree = "<group>"; };
 		479E57472A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingAndHandlingEventsWithCombineViewModel.swift; sourceTree = "<group>"; };
+		479E574A2A38886F005E2789 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				479E573E2A3883F9005E2789 /* User.swift */,
+				479E574A2A38886F005E2789 /* Ticket.swift */,
 			);
 			path = "data-model";
 			sourceTree = "<group>";
@@ -109,16 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				479E57422A3883FF005E2789 /* MappingElements.swift */,
-				479E57432A3883FF005E2789 /* Map */,
 			);
 			path = "Mapping-Elements";
-			sourceTree = "<group>";
-		};
-		479E57432A3883FF005E2789 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		479E57452A388406005E2789 /* Receiving-and-Handling-Events-with-Combine */ = {
@@ -203,6 +198,7 @@
 				479E573F2A3883F9005E2789 /* User.swift in Sources */,
 				479E572F2A3883CA005E2789 /* ContentView.swift in Sources */,
 				479E572D2A3883CA005E2789 /* combine_studyApp.swift in Sources */,
+				479E574B2A38886F005E2789 /* Ticket.swift in Sources */,
 				479E57492A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift in Sources */,
 				479E57482A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift in Sources */,
 				479E573C2A3883EB005E2789 /* ResponseResults.swift in Sources */,
