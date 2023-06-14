@@ -16,6 +16,9 @@ struct ContentView: View {
             Button(action:{ MappingElements.map()}){
                 Text("티켓 발행")
             }
+            Button(action:{ MappingElements.tryMap()}){
+                Text("티켓검사")
+            }
         }
         .padding()
     }
