@@ -15,4 +15,14 @@ struct ResponseResults{
         User(name: "Aurora", age: 26),
         User(name: "Cascade", age: 25)
     ]
+    
+    static let products:[Product] = {
+        var results = [
+            Product(id: 0),
+            Product(id: 0),
+            Product(id: 1),
+            Product(id: 5)
+        ]
+        return results
+    }()
 }

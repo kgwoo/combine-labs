@@ -17,6 +17,8 @@
 		479E57482A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E57462A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift */; };
 		479E57492A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E57472A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift */; };
 		479E574B2A38886F005E2789 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E574A2A38886F005E2789 /* Ticket.swift */; };
+		47BCC0952A396D8500CE62A8 /* FilteringElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC0942A396D8500CE62A8 /* FilteringElements.swift */; };
+		47BCC0972A399A0000CE62A8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC0962A399A0000CE62A8 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		479E57462A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingAndHandlingEventsWithCombineView.swift; sourceTree = "<group>"; };
 		479E57472A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingAndHandlingEventsWithCombineViewModel.swift; sourceTree = "<group>"; };
 		479E574A2A38886F005E2789 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		47BCC0942A396D8500CE62A8 /* FilteringElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringElements.swift; sourceTree = "<group>"; };
+		47BCC0962A399A0000CE62A8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				479E573E2A3883F9005E2789 /* User.swift */,
 				479E574A2A38886F005E2789 /* Ticket.swift */,
+				47BCC0962A399A0000CE62A8 /* Product.swift */,
 			);
 			path = "data-model";
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		479E57402A3883FF005E2789 /* Publisher */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC0932A396D6A00CE62A8 /* Filtering-Elements */,
 				479E57412A3883FF005E2789 /* Mapping-Elements */,
 			);
 			path = Publisher;
@@ -123,6 +129,14 @@
 				479E57472A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift */,
 			);
 			path = "Receiving-and-Handling-Events-with-Combine";
+			sourceTree = "<group>";
+		};
+		47BCC0932A396D6A00CE62A8 /* Filtering-Elements */ = {
+			isa = PBXGroup;
+			children = (
+				47BCC0942A396D8500CE62A8 /* FilteringElements.swift */,
+			);
+			path = "Filtering-Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +214,9 @@
 				479E572D2A3883CA005E2789 /* combine_studyApp.swift in Sources */,
 				479E574B2A38886F005E2789 /* Ticket.swift in Sources */,
 				479E57492A388406005E2789 /* ReceivingAndHandlingEventsWithCombineViewModel.swift in Sources */,
+				47BCC0952A396D8500CE62A8 /* FilteringElements.swift in Sources */,
 				479E57482A388406005E2789 /* ReceivingAndHandlingEventsWithCombineView.swift in Sources */,
+				47BCC0972A399A0000CE62A8 /* Product.swift in Sources */,
 				479E573C2A3883EB005E2789 /* ResponseResults.swift in Sources */,
 				479E57442A3883FF005E2789 /* MappingElements.swift in Sources */,
 			);

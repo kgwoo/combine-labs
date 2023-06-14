@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var MappingElements = MappingElement.shared
+    @StateObject var FilteringMethod = FilteringElements.shared
     
     var body: some View {
         VStack(spacing:20){
             Text("Hello, Combine!")
-            Button(action:{ MappingElements.map()}){
-                Text("티켓 발행")
+            Button(action:{ FilteringMethod.removeDuplicates()}){
+                Text("상품 중복 제거")
             }
-            Button(action:{ MappingElements.tryMap()}){
-                Text("티켓검사")
+            
+            VStack(spacing:8){
+                ForEach(FilteringMethod.products, id:\.id) { product in
+                    Text("상품 아이디: \(product.id)")
+                }
             }
         }
         .padding()
