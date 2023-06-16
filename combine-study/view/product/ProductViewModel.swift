@@ -26,4 +26,8 @@ final class ProductViewModel:ObservableObject{
             self?.products = results
         }
     }
+    
+    func test(){
+        applySequenceOperator.PubSub()
+    }
 }

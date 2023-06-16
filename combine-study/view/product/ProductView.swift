@@ -43,6 +43,9 @@ struct ProductView: View {
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)
+        .onAppear{
+            vm.test()
+        }
     }
 }
 
