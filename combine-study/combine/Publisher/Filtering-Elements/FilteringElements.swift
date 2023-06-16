@@ -8,11 +8,26 @@
 import Foundation
 import Combine
 
-final class FilteringElements:ObservableObject{
-    static let shared = FilteringElements()
+final class FilteringElements{
     private var cancellable: AnyCancellable?
-    @Published var products: [Product] = ResponseResults.products
+    var products: [Product]
+    let numbers = [0, 1, 2, 2, 3, 3, 3]
     
+    init(products:[Product]){
+        self.products = products
+    }
+    
+    func test(){
+        cancellable = numbers.publisher
+            .removeDuplicates(by: { prev, current in
+                print(prev, current)
+               return prev == current
+            })
+            .sink{ num in
+                print("숫자: \(num)")
+            }
+    }
+        
     func removeDuplicates(){
         cancellable = products.publisher
             .removeDuplicates()
